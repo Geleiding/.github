@@ -154,7 +154,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add publiccode.yaml
-          git commit -m "${{ github.workflow }}" || echo "No changes to commit"
+          git commit -m "${{ github.workflow }}" || (echo "No changes to commit" && exit 0)
           git pull --rebase origin main
           git push
 
@@ -164,9 +164,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add openCatalogi.yaml
-          git commit -m "${{ github.workflow }}" || echo "No changes to commit"
+          git commit -m "${{ github.workflow }}" || (echo "No changes to commit" && exit 0)
           git pull --rebase origin main
           git push
+
 
 
   publish-to-opencatalogi:
