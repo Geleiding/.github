@@ -1,6 +1,7 @@
 name: PublicOrganisation Check and Update
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - never
