@@ -2,6 +2,5 @@ description: Dit is een test repository voor het zelf-documenterende project Ope
 logo: https://avatars.githubusercontent.com/u/145778671?v=4
 name: Geleiding
 nl: {}
+softwareUsed: -'https://github.com/Geleiding/Slackbot'
 url: Geleiding
-softwareUsed:
-  -'https://github.com/Geleiding/Slackbot'
