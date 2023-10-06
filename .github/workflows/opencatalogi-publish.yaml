@@ -1,7 +1,6 @@
 name: PublicCode and PublicOrganization Check and Update
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
@@ -148,27 +147,24 @@ jobs:
               yaml.safe_dump(data, f)
           END
 
-      - name: Commit and Push changes
+      - name: Commit changes
         if: (!contains(github.repository, '.github'))
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add publiccode.yaml
-          git commit -m "${{ github.workflow }}" || (echo "No changes to commit" && exit 0)
-          git pull --rebase origin main
+          git commit -m "${{ github.workflow }}" || echo "No changes to commit"
           git push
 
-      - name: Commit and Push changes
+      - name: Commit changes
         if: (contains(github.repository, '.github'))
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git pull
           git add openCatalogi.yaml
-          git commit -m "${{ github.workflow }}" || (echo "No changes to commit" && exit 0)
-          git pull --rebase origin main
+          git commit -m "${{ github.workflow }}" || echo "No changes to commit"
           git push
-
-
 
   publish-to-opencatalogi:
     runs-on: ubuntu-latest
