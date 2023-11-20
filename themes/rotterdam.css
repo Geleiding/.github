@@ -117,7 +117,6 @@
 
 .rotterdam-theme {
   /* @gemeente-utrecht: Databadge */
-  --utrecht-badge-padding-block: var(--web-app-size-xs) !important;
   --utrecht-badge-background-color: var(--rotterdam-color-base-black) !important;
   --utrecht-badge-font-size: var(--web-app-font-size-sm) !important;
   --utrecht-badge-font-weight: var(--web-app-font-weight-normal) !important;
@@ -156,10 +155,6 @@
   --utrecht-heading-4-margin-block-end: var(--web-app-size-lg);
 }
 
-.utrecht-link {
-  display: inline-flex;
-  align-items: flex-start !important;
-}
 
 .utrecht-badge-data > svg {
   margin-inline-end: var(--web-app-size-2xs);
