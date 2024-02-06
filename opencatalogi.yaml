@@ -1,7 +1,8 @@
 contact:
   email: ''
   phone: ''
-name: ''
+description: Organisatie Geleiding
+name: Geleiding
 publiccodeYmlVersion: '0.2'
 softwareOwned:
 - https://github.com/Geleiding/Slackbot
