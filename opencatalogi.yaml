@@ -1,9 +1,9 @@
 contact:
-  email: ''
+  email: 'jouwmening@live.nl'
   phone: ''
 description: Organisatie Geleiding
 name: Geleiding
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: '0.3'
 softwareOwned:
 - https://github.com/Geleiding/Slackbot
 - https://github.com/Geleiding/.github
