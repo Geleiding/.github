@@ -1,0 +1,17 @@
+contact:
+  email: ''
+  phone: ''
+name: ''
+publiccodeYmlVersion: '0.2'
+softwareOwned:
+- https://github.com/Geleiding/Slackbot
+- https://github.com/Geleiding/.github
+softwareSupported:
+- software: https://github.com/Geleiding/Slackbot
+  type: community
+- software: https://github.com/Geleiding/.github
+  type: community
+softwareUsed:
+- https://github.com/Geleiding/Slackbot
+- https://github.com/Geleiding/.github
+website: ''
